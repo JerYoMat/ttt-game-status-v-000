@@ -44,10 +44,12 @@ def over?(board)
   if won?(board) != false || draw?(board) == true 
     true 
   end 
+
 end 
 
 def winner(board)
   if over?(board)
     board[won?(board)[0]]
   end 
+
 end 
